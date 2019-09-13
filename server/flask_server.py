@@ -25,7 +25,9 @@ def fib_sequence_view(num: int):
     :param num: the user number to calculate.
     :return: calculated number in string format.
     """
-    return str(fib_sequence(int(num)))
+    if type(num) is int:
+        return str(fib_sequence(num))
+    return "Wrong value passed - the 'num' must be integer."
 
 
 if __name__ == '__main__':

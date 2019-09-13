@@ -4,6 +4,7 @@ def fib_sequence(num: int):
     :param num: number for sequence in int type.
     :return: transformed number
     """
+    num = int(num)
     if num == 1:
         return 1
     elif num == 0:
